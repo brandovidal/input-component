@@ -1,0 +1,76 @@
+/* Fonts */
+/*--------------------*/
+@font-face {
+  font-family: 'NotoSansJP';
+  src: url('/fonts/NotoSansJP.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'UbuntuMono';
+  src: url('/fonts/UbuntuMono.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+:root {
+  font-family: 'NotoSansJP', system-ui, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color-scheme: light dark;
+
+  --font-size-base: clamp(0.9rem, 0.34vw + 0.7rem, 1rem);
+  --font-size-md: clamp(1rem, 0.5vw + 0.95rem, 1.25rem);
+  --font-size-lg: clamp(1.2rem, 0.7vw + 1.2rem, 1.5rem);
+  --font-size-xl: clamp(2.44rem, 2.38vw + 1.85rem, 3.75rem);
+
+  --bg-white: #ffffff;
+  --bg-default: hsla(0, 0%, 88%, 1);
+  --bg-primary: #2f80ed;
+  --bg-secondary: #8f8e91;
+  --bg-dark: #100e1d;
+
+  --color-default: #828282;
+  --color-primary: #2f80ed;
+  --color-secondary: #4f4f4f;
+  --color-dark: #333333;
+  --color-gray: #c4c4c4;
+  --color-muted: #e0e0e0;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
