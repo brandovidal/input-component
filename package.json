@@ -18,6 +18,7 @@
     "lint-fix": "ts-standard --fix",
     "clean": "rimraf node_modules/ dist/",
     "lint-staged": "npx lint-staged",
+    "prepare": "husky install",
     "test": "vitest",
     "test-ui": "vitest --ui",
     "test-ct": "playwright test -c playwright.config.ts"
