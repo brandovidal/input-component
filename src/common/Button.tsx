@@ -1,26 +1,45 @@
 import classnames from 'classnames'
-import { Color } from '../types/Color'
+
+import { Color, Size, Variant } from '../types/Button'
+import { IconName } from '../types/Icon'
+
+import { Icon } from './Icon'
 
 interface Props {
-  variant?: 'outline' | 'text'
+  variant?: Variant
+  size?: Size
   color?: Color
-  text?: String
-  isHover?: Boolean
+  text?: string
+  isHover?: boolean
+  disableShadow?: boolean
+  disabled?: boolean
+  startIcon?: IconName
+  endIcon?: IconName
 }
 
 export const Button = ({
   color = 'default',
   variant,
   text = 'Default',
-  isHover = false
+  size = 'md',
+  isHover = false,
+  disabled = false,
+  disableShadow = false,
+  startIcon,
+  endIcon,
 }: Props): React.ReactElement => {
   return (
     <button
-      className={classnames([variant], [color], {
-        active: isHover
+      type="button"
+      className={classnames([color], [variant], [size], {
+        active: isHover,
+        primary: disableShadow
       })}
+      disabled={disabled}
     >
+      {startIcon && <Icon name={startIcon} color={variant || color} type='append' />}
       {text}
+      {endIcon && <Icon name={endIcon} color={variant || color} type='prepend' />}
     </button>
   )
 }
