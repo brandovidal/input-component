@@ -90,9 +90,24 @@ main .list {
   flex-direction: row;
   margin-bottom: 45px;
 }
+@media (max-width: 768px) {
+  main .list {
+    flex-direction: column;
+  }
+}
+
 main .list .item {
   min-width: 150px;
   margin-right: 68px;
+}
+@media (max-width: 768px) {
+  main .list .item {
+    margin-right: 0;
+    margin-bottom: var(--margin-md);
+  }
+  main .list .item:last-child {
+    margin: 0;
+  }
 }
 
 /* Header */
