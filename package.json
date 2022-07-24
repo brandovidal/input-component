@@ -17,7 +17,7 @@
     "lint": "ts-standard",
     "lint-fix": "ts-standard --fix",
     "clean": "rimraf node_modules/ dist/",
-    "lint-staged": "lint-staged",
+    "lint-staged": "npx lint-staged",
     "test": "vitest",
     "test-ui": "vitest --ui",
     "test-ct": "playwright test -c playwright.config.ts"
