@@ -17,7 +17,6 @@
     "lint": "ts-standard",
     "lint-fix": "ts-standard --fix",
     "clean": "rimraf node_modules/ dist/",
-    "lint-staged": "npx lint-staged",
     "prepare": "husky install",
     "test": "vitest",
     "test-related": "vitest related",
@@ -39,7 +38,6 @@
     "@vitest/ui": "0.19.0",
     "husky": "8.0.1",
     "jsdom": "20.0.0",
-    "lint-staged": "13.0.3",
     "playwright": "1.24.0",
     "rimraf": "3.0.2",
     "ts-standard": "11.0.0",
@@ -55,11 +53,6 @@
       "src/**/*.js",
       "src/**/*.d.ts",
       "**/*.config.ts"
-    ]
-  },
-  "lint-staged": {
-    "*.{js,jsx,ts,tsx}": [
-      "npm run lint-fix"
     ]
   }
 }
