@@ -11,7 +11,7 @@ export const Icon = ({ name = 'local_grocery_store', type = 'append', color }: P
 
   return (
     <picture className={classNames('icon', [type], [color])}>
-      <svg viewBox="0 0 24 24">{icon}</svg>
+      <svg viewBox='0 0 24 24'>{icon}</svg>
     </picture>
   )
 }
