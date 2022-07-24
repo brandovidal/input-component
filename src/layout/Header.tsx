@@ -1,6 +1,4 @@
-interface Props {
-  text?: string
-}
+import { Props } from '../interfaces/Text'
 
 export const Header = ({ text = '' }: Props): React.ReactElement => (
   <header>

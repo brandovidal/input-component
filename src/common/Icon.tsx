@@ -2,16 +2,9 @@
 
 import classNames from 'classnames'
 
+import { Props } from '../interfaces/Icon'
+
 import { iconsMap } from '../helper/Icon'
-
-import { Color, Variant } from '../types/Button'
-import { IconName } from '../types/Icon'
-
-interface Props {
-  name?: IconName
-  type?: 'append' | 'prepend'
-  color?: Color | Variant
-}
 
 export const Icon = ({ name = 'local_grocery_store', type = 'append', color }: Props): React.ReactElement => {
   const icon = iconsMap[name]
