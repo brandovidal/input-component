@@ -127,7 +127,7 @@ pre {
   height: var(--font-size-base);
   fill: var(--color-white);
 }
-.icon.apppend {
+.icon.append {
   margin-right: var(--margin-sm);
 }
 .icon.prepend {
