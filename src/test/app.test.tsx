@@ -19,15 +19,12 @@ describe('App', async () => {
   afterAll(async () => {
     await browser.close()
     await new Promise<void>((resolve, reject) => {
-      server.httpServer.close((error) => ((error != null) ? reject(error) : resolve()))
+      server.httpServer.close((error) => (error != null ? reject(error) : resolve()))
     })
   })
 
   test('should have button', async () => {
     await page.goto('http://localhost:5173')
-
-    // const component = await <Button />
-    // await expect(component).toContainText('Default')
 
     const button = page.locator('button[class="default md"]').first()
     expect(button).toBeDefined()

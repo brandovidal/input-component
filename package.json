@@ -17,6 +17,7 @@
     "lint": "ts-standard",
     "lint-fix": "ts-standard --fix",
     "clean": "rimraf node_modules/ dist/",
+    "lint-staged": "lint-staged",
     "test": "vitest",
     "test-ui": "vitest --ui",
     "test-ct": "playwright test -c playwright.config.ts"
@@ -34,7 +35,9 @@
     "@types/react-dom": "18.0.6",
     "@vitejs/plugin-react": "2.0.0",
     "@vitest/ui": "0.19.0",
+    "husky": "8.0.1",
     "jsdom": "20.0.0",
+    "lint-staged": "13.0.3",
     "playwright": "1.24.0",
     "rimraf": "3.0.2",
     "ts-standard": "11.0.0",
@@ -51,5 +54,15 @@
       "src/**/*.d.ts",
       "**/*.config.ts"
     ]
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "npm run lint-fix"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint-staged && npm run lint-fix && npm run test"
+    }
   }
 }
