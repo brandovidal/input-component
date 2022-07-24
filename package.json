@@ -20,6 +20,7 @@
     "lint-staged": "npx lint-staged",
     "prepare": "husky install",
     "test": "vitest",
+    "test-related": "vitest related",
     "test-ui": "vitest --ui",
     "test-ct": "playwright test -c playwright.config.ts"
   },

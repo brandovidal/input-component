@@ -30,5 +30,5 @@ describe('App', async () => {
     expect(button).toBeDefined()
 
     await expect(button).toHaveText('Default')
-  }, 60_000)
+  }, 10_000)
 })
