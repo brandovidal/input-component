@@ -4,9 +4,9 @@ import { Footer } from './Footer'
 import { Header } from './Header'
 
 export const Layout = ({ children = '' }: Props): React.ReactElement => (
-  <div className="container">
-    <Header text="Buttons" />
+  <div className='container'>
+    <Header text='Buttons' />
     {children}
-    <Footer text="created by @brandovidal - devChallenges.io" />
+    <Footer text='created by @brandovidal - devChallenges.io' />
   </div>
 )

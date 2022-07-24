@@ -12,21 +12,21 @@ export const Button = ({
   isHover = false,
   disabled = false,
   disableShadow = false,
-  startIcon,
-  endIcon
+  startIcon = undefined,
+  endIcon = undefined
 }: Props): React.ReactElement => {
   return (
     <button
-      type="button"
+      type='button'
       className={classnames([color], [variant], [size], {
         active: isHover,
         primary: disableShadow
       })}
       disabled={disabled}
     >
-      {startIcon && <Icon name={startIcon} color={variant || color} type="append" />}
+      {startIcon !== undefined && <Icon name={startIcon} color={variant ?? color} type='append' />}
       {text}
-      {endIcon && <Icon name={endIcon} color={variant || color} type="prepend" />}
+      {endIcon !== undefined && <Icon name={endIcon} color={variant ?? color} type='prepend' />}
     </button>
   )
 }
