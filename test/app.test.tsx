@@ -23,7 +23,7 @@ describe('App', async () => {
     })
   })
 
-  test('should have button', async () => {
+  test('should have default button', async () => {
     await page.goto('http://localhost:5173')
 
     const button = page.locator('button[class="default md"]').first()
