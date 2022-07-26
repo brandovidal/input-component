@@ -11,7 +11,7 @@ describe('App', async () => {
   let page: Page
 
   beforeAll(async () => {
-    server = await preview({ preview: { port: 3000 } })
+    server = await preview({ preview: { port: 5173 } })
     browser = await chromium.launch()
     page = await browser.newPage()
   })
