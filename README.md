@@ -39,11 +39,11 @@
 
 _Screenshot Laptop_
 
-![Screenshot Laptop](./desktop.png)
+![Screenshot Laptop](./public/img/desktop.png)
 
 _Screenshot Mobile_
 
-![Screenshot Mobile](./mobile.png)
+![Screenshot Mobile](./public/img/mobile.png)
 
 Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
 
