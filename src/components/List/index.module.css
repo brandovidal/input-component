@@ -1,0 +1,12 @@
+/* Item */
+.list {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 45px;
+}
+
+@media (max-width: 768px) {
+    .list {
+        flex-direction: column;
+    }
+}

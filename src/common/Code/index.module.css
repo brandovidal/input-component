@@ -1,0 +1,6 @@
+/* Code */
+.code {
+    font-size: var(--font-size-sm);
+    line-height: 12px;
+    margin-bottom: var(--margin-sm);
+}
