@@ -5,7 +5,7 @@ import { Code } from '../../common/Code'
 import { Item } from '../../common/Item'
 import { List } from '../../components/List'
 
-import { data } from '../../constant/layout'
+import { data } from '../../constant/data'
 
 export const Home = (): React.ReactElement => {
   return (

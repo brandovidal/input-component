@@ -1,13 +1,13 @@
 {
-  "name": "button-component",
+  "name": "input-component",
   "version": "0.0.0",
   "author": "Brando Vidal",
   "license": "MIT",
   "type": "module",
   "keywords": [
     "devchallengues",
-    "button component",
-    "button"
+    "input component",
+    "input"
   ],
   "private": false,
   "scripts": {
