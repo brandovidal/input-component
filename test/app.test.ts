@@ -1,6 +1,7 @@
 import { afterAll, beforeAll, describe, test } from 'vitest'
 import { preview } from 'vite'
 import type { PreviewServer } from 'vite'
+
 import { chromium } from 'playwright'
 import type { Browser, Page } from 'playwright'
 import { expect } from '@playwright/test'
@@ -23,12 +24,20 @@ describe('App', async () => {
     })
   })
 
+  test('should have to be defined button', async () => {
+    await page.goto('http://localhost:5173')
+
+    const button = page.locator('button[class*="md"]').first()
+
+    expect(button).toBeDefined()
+  }, 3_000)
+
   test('should have default button', async () => {
     await page.goto('http://localhost:5173')
 
-    const button = page.locator('button[class="default md"]').first()
+    const button = page.locator('button[class*="md"]').first()
     expect(button).toBeDefined()
 
     await expect(button).toHaveText('Default')
-  }, 10_000)
+  }, 3_000)
 })
