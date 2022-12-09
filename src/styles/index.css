@@ -66,6 +66,16 @@
   --box-shadow-color: rgba(0, 0, 0, 0.1);
 }
 
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 body {
   color: var(--color-muted);
   font-size: var(--font-size-base);
