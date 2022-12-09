@@ -71,12 +71,6 @@ body {
   font-size: var(--font-size-base);
 }
 
-/* Home */
-main {
-  display: flex;
-  flex-direction: column;
-}
-
 /* Item */
 main .list {
   display: flex;
