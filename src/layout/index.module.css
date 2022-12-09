@@ -1,6 +1,27 @@
 /* Layout */
 .container {
+    width: fit-content;
     max-width: 960px;
     margin: 0 auto;
     padding: 3.5em 5rem;
+}
+
+/* Header */
+header h1 {
+    font-weight: 500;
+    font-size: var(--font-size-lg);
+    line-height: 36px;
+    color: var(--color-dark);
+    margin-bottom: var(--margin-xl);
+}
+
+/* Footer */
+footer {
+    display: block;
+}
+
+footer p {
+    color: var(--color-muted);
+    font-size: 14px;
+    line-height: 17px;
 }
