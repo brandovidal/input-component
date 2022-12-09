@@ -1,3 +1,5 @@
+import styles from './index.module.css'
+
 import { Button } from '../../common/Button'
 import { Code } from '../../common/Code'
 import { Item } from '../../common/Item'
@@ -5,7 +7,7 @@ import { List } from '../../components/List'
 
 export const Home = (): React.ReactElement => {
   return (
-    <main>
+    <main className={styles.main}>
       <List>
         <Item>
           <Code text='<Button />' />

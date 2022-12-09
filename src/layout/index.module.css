@@ -1,9 +1,9 @@
 /* Layout */
 .container {
     width: fit-content;
-    max-width: 960px;
+    max-width: 1000px;
     margin: 0 auto;
-    padding: 3.5em 5rem;
+    padding: var(--padding-lg);
 }
 
 /* Header */

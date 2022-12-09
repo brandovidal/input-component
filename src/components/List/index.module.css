@@ -2,11 +2,10 @@
 .list {
     display: flex;
     flex-direction: row;
-    margin-bottom: 45px;
-}
+    flex-wrap: wrap;
+    flex-grow: 1;
 
-@media (max-width: 768px) {
-    .list {
-        flex-direction: column;
-    }
+    gap: var(--padding-lg);
+    row-gap: var(--padding-sm);
+    margin-bottom: var(--margin-2xl);
 }

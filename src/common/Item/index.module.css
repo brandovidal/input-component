@@ -1,15 +1,5 @@
 .item {
-    min-width: 150px;
-    margin-right: 68px;
-}
-
-@media (max-width: 768px) {
-    .item {
-        margin-right: 0;
-        margin-bottom: var(--margin-md);
-    }
-
-    .item:last-child {
-        margin: 0;
-    }
+    width: fit-content;
+    min-width: 14rem;
+    margin-bottom: var(--margin-md);
 }
