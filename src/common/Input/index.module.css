@@ -1,0 +1,52 @@
+/* Button */
+.input {
+    font-size: var(--font-size-base);
+    font-weight: 500;
+    font-family: inherit;
+
+    border: 1px solid transparent;
+    border-radius: 8px;
+
+    border-color: var(--color-default);
+    color: var(--color-default);
+
+    transition: color var(--transition-duration), border-color var(--transition-duration);
+}
+
+:is(.input.active, .input:hover) {
+    border-color: var(--bg-hover-secondary);
+}
+
+:is(.input.focus, .input:focus) {
+    border-color: var(--bg-hover-primary);
+}
+
+:is(.input.danger, .input.danger.focus, .input.danger:focus) {
+    border-color: var(--bg-hover-danger);
+}
+
+:is(.input.danger.active, .input.danger:hover) {
+    border-color: var(--bg-hover-default);
+}
+
+:is(.input:disabled, .input:disabled.active, .input:disabled:hover, .input:disabled:focus) {
+    background-color: var(--bg-gray) !important;
+    border-color: var(--bg-gray) !important;
+    filter: brightness(0.9);
+}
+
+.input.sm {
+    padding: var(--padding-sm);
+}
+
+.input.md {
+    padding: var(--padding-md);
+}
+
+.with-start-icon {
+    padding-left: var(--margin-2xl) !important;
+}
+
+.with-end-icon {
+    padding-right: var(--margin-2xl) !important;
+}

@@ -1,0 +1,36 @@
+.control {
+    display: flex;
+    flex-direction: column;
+}
+
+.helper-text {
+    font-weight: 400;
+    font-size: var(--font-size-sm);
+    line-height: 17px;
+    margin-top: 4px;
+    ;
+}
+
+.danger {
+    color: var(--color-danger);
+}
+
+.input {
+    position: relative;
+}
+
+.input .start {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    margin-left: var(--margin-base);
+}
+
+.input .end {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    margin-right: var(--margin-base);
+}

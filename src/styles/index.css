@@ -39,28 +39,34 @@
   --margin-xl: clamp(1.2rem, 0.7vw + 1.5rem, 1.75rem);
   --margin-2xl: clamp(2.44rem, 2.38vw + 1.85rem, 2.25rem);
 
-  --padding-sm: 0.375em 0.75em;
-  --padding-md: 0.5em 1em;
-  --padding-lg: 0.75em 1.375em;
-
-  --bg-default: #e0e0e0;
-  --bg-primary: #3d5afe;
-  --bg-secondary: #455a64;
-  --bg-danger: #d32f2f;
-  --bg-transparent: transparent;
-
-  --bg-hover-default: #aeaeae;
-  --bg-hover-primary: #0039cb;
-  --bg-hover-secondary: #1c313a;
-  --bg-hover-danger: #9a0007;
-  --bg-hover-transparent: rgba(41, 98, 255, 0.1);
+  --padding-sm: clamp(0.9rem, 0.34vw + 0.7rem, 1rem) clamp(0.85rem, 0.5vw + 0.95rem, 0.865rem);
+  --padding-md: clamp(1rem, 0.5vw + 0.95rem, 1.25rem) clamp(0.9rem, 0.34vw + 0.7rem, 1rem);
+  --padding-lg: clamp(1.2rem, 0.7vw + 1.2rem, 1.5rem) clamp(1rem, 0.5vw + 0.95rem, 1.25rem);
+  --padding-xl: clamp(1.2rem, 0.7vw + 1.5rem, 1.75rem) clamp(1.2rem, 0.7vw + 1.2rem, 1.5rem);
+  --padding-2xl: clamp(2.44rem, 2.38vw + 1.85rem, 2.25rem) clamp(1.2rem, 0.7vw + 1.5rem, 1.75rem);
 
   --color-white: #ffffff;
-  --color-default: #3f3f3f;
-  --color-primary: #3d5afe;
-  --color-dark: #333333;
-  --color-gray: #828282;
+  --color-default: #828282;
+  --color-primary: #2962FF;
+  --color-secondary: #333333;
+  --color-danger: #D32F2F;
+  --color-dark: #4F4F4F;
   --color-muted: #9e9e9e;
+
+  --bg-default: #333333;
+  --bg-primary: var(--color-primary);
+  --bg-secondary: #828282;
+  --bg-disabled: #F2F2F2;
+  --bg-gray: #F2F2F2;
+  --bg-dark: #E0E0E0;
+  --bg-danger: var(--color-danger);
+  --bg-transparent: transparent;
+
+  --bg-hover-default: #828282;
+  --bg-hover-primary: #2962FF;
+  --bg-hover-secondary: #333333;
+  --bg-hover-danger: #9a0007;
+  --bg-hover-transparent: rgba(41, 98, 255, 0.1);
 
   --transition-duration: 0.25s;
   --box-shadow-color: rgba(0, 0, 0, 0.1);
@@ -77,6 +83,6 @@ html {
 }
 
 body {
-  color: var(--color-muted);
+  color: var(--color-default);
   font-size: var(--font-size-base);
 }

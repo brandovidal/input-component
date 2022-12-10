@@ -1,0 +1,18 @@
+/* Code */
+.label {
+    font-size: var(--font-size-sm);
+    line-height: 17px;
+    margin-bottom: var(--margin-sm);
+}
+
+:is(.default) {
+    color: var(--color-secondary);
+}
+
+:is(.primary) {
+    color: var(--color-primary);
+}
+
+:is(.danger) {
+    color: var(--color-danger);
+}

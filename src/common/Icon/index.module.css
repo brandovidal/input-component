@@ -2,7 +2,7 @@
 .icon {
     width: var(--font-size-base);
     height: var(--font-size-base);
-    fill: var(--color-white);
+    fill: var(--color-secondary);
 }
 
 .icon.append {

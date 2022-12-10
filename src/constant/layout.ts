@@ -1,4 +1,4 @@
 export const layout = {
-  header: 'Buttons',
+  header: 'Inputs',
   footer: 'created by @brandovidal - devChallenges.io'
 }

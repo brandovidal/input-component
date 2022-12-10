@@ -1,4 +1,4 @@
-import { Props as ButtonProps } from '../interfaces/Button'
+import { Props as InputProps } from './Input'
 
 export interface Props {
   list: List[]
@@ -6,5 +6,5 @@ export interface Props {
 
 export interface List {
   code: string
-  button: ButtonProps
+  input: InputProps
 }

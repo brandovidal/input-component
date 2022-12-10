@@ -4,47 +4,43 @@ export const data: Props[] = [
   {
     list: [
       {
-        code: '<Button />',
-        button: {}
+        code: '<Input />',
+        input: {}
       },
       {
-        code: '&:hover, &:focus',
-        button: {
+        code: '&:hover',
+        input: {
           isHover: true
         }
+      },
+      {
+        code: '&:focus',
+        input: {
+          isFocus: true
+        }
       }
     ]
   },
   {
     list: [
       {
-        code: "<Button variant='outline' />",
-        button: {
-          variant: 'outline'
+        code: '<Input error />',
+        input: {
+          error: true
         }
       },
       {
-        code: "&: hover, &: focus'",
-        button: {
-          variant: 'outline',
+        code: '&:hover',
+        input: {
+          error: true,
           isHover: true
         }
-      }
-    ]
-  },
-  {
-    list: [
-      {
-        code: "<Button variant='text' />",
-        button: {
-          variant: 'text'
-        }
       },
       {
-        code: "&: hover, &: focus'",
-        button: {
-          variant: 'text',
-          isHover: true
+        code: '&:focus',
+        input: {
+          error: true,
+          isFocus: true
         }
       }
     ]
@@ -52,25 +48,8 @@ export const data: Props[] = [
   {
     list: [
       {
-        code: '<Button disableShadow />',
-        button: {
-          disableShadow: true
-        }
-      }
-    ]
-  },
-  {
-    list: [
-      {
-        code: '<Button disabled />',
-        button: {
-          disabled: true
-        }
-      },
-      {
-        code: "<Button variant='text' disabled />",
-        button: {
-          variant: 'text',
+        code: '<Input disabled />',
+        input: {
           disabled: true
         }
       }
@@ -79,17 +58,16 @@ export const data: Props[] = [
   {
     list: [
       {
-        code: "<Button startIcon='local_grocery_store' />",
-        button: {
-          color: 'primary',
-          startIcon: 'local_grocery_store'
+        code: "<Input helperText='Some interesting text' />",
+        input: {
+          helperText: 'Some interesting text'
         }
       },
       {
-        code: "<Button endIcon='local_grocery_store' />",
-        button: {
-          color: 'primary',
-          endIcon: 'local_grocery_store'
+        code: "<Input helperText='Some interesting text' error />",
+        input: {
+          error: true,
+          helperText: 'Some interesting text'
         }
       }
     ]
@@ -97,21 +75,15 @@ export const data: Props[] = [
   {
     list: [
       {
-        code: "<Button size='sm' />",
-        button: {
-          size: 'sm'
+        code: '<Input startIcon />',
+        input: {
+          startIcon: 'phone'
         }
       },
       {
-        code: "<Button size='md' />",
-        button: {
-          size: 'md'
-        }
-      },
-      {
-        code: "<Button size='lg' />",
-        button: {
-          size: 'lg'
+        code: '<Input endIcon />',
+        input: {
+          endIcon: 'lock'
         }
       }
     ]
@@ -119,59 +91,9 @@ export const data: Props[] = [
   {
     list: [
       {
-        code: "<Button color='default' />",
-        button: {
-          color: 'default'
-        }
-      },
-      {
-        code: "<Button color='primary' />",
-        button: {
-          color: 'primary'
-        }
-      },
-      {
-        code: "<Button color='secondary' />",
-        button: {
-          color: 'secondary'
-        }
-      },
-      {
-        code: "<Button color='danger' />",
-        button: {
-          color: 'danger'
-        }
-      }
-    ]
-  },
-  {
-    list: [
-      {
-        code: '&:hover, &:focus',
-        button: {
-          color: 'default',
-          isHover: true
-        }
-      },
-      {
-        code: "<Button color='primary' />",
-        button: {
-          color: 'primary',
-          isHover: true
-        }
-      },
-      {
-        code: "<Button color='secondary' />",
-        button: {
-          color: 'secondary',
-          isHover: true
-        }
-      },
-      {
-        code: "<Button color='danger' />",
-        button: {
-          color: 'danger',
-          isHover: true
+        code: "<Input value='text' />",
+        input: {
+          value: 'Text'
         }
       }
     ]
