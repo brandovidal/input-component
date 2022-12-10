@@ -17,6 +17,7 @@
 
 .input {
     position: relative;
+    width: fit-content;
 }
 
 .input .start {
@@ -33,4 +34,8 @@
     right: 0;
     height: 100%;
     margin-right: var(--margin-base);
+}
+
+.full-width {
+    width: 100%;
 }

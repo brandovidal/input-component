@@ -1,5 +1,5 @@
 .item {
-    width: fit-content;
+    width: inherit;
     min-width: 14rem;
     margin-bottom: var(--margin-md);
 }

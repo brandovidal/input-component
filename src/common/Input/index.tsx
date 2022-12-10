@@ -14,20 +14,22 @@ export const Input = ({
   isFocus = false,
   disabled = false,
   error = false,
+  fullWidth = false,
   withStartIcon = false,
-  withEndIcon = false
+  withEndIcon = false,
 }: Props): React.ReactElement => {
-  const colorError = error && 'danger'
+  const newColor = error ? 'danger' : color
 
   return (
     <input
       type={type}
       className={classnames(
         styles.input,
-        styles[colorError || color],
+        styles[newColor],
         styles[size],
         isHover && styles.active,
         isFocus && styles.focus,
+        fullWidth && styles['full-width'],
         withStartIcon && styles['with-start-icon'],
         withEndIcon && styles['with-end-icon'])}
       placeholder={placeholder}

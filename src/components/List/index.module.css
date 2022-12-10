@@ -1,11 +1,19 @@
 /* Item */
 .list {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    flex-grow: 1;
+    position: relative;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    width: 100%;
 
     gap: var(--padding-lg);
     row-gap: var(--padding-sm);
     margin-bottom: var(--margin-2xl);
+}
+
+@media (max-width: 768px) {
+    .list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    }
 }

@@ -19,19 +19,20 @@ export const ControlInput = ({
   isFocus = false,
   disabled = false,
   error = false,
+  fullWidth = false,
   startIcon = undefined,
   endIcon = undefined
 }: Props): React.ReactElement => {
-  const colorError = error && !isHover && 'danger'
+  const newColor = error ? 'danger' : color
 
   return (
-    <div className={styles.control}>
-      <Label text={label} color={colorError || color} />
-      <div className={styles.input}>
+    <div className={classNames(styles.control, fullWidth && styles['full-width'])}>
+      <Label text={label} color={newColor} />
+      <div className={classNames(styles.input, fullWidth && styles['full-width'])}>
         {startIcon !== undefined && <Icon name={startIcon} color={color} type='append' className={styles.start} />}
         <Input
           type={type}
-          color={colorError || color}
+          color={newColor}
           size={size}
           placeholder={placeholder}
           value={value}
@@ -39,12 +40,13 @@ export const ControlInput = ({
           isFocus={isFocus}
           disabled={disabled}
           error={error}
+          fullWidth={fullWidth}
           withStartIcon={Boolean(startIcon)}
           withEndIcon={Boolean(endIcon)}
         />
         {endIcon !== undefined && <Icon name={endIcon} color={color} type='prepend' className={styles.end} />}
       </div>
-      <span className={classNames(styles['helper-text'], styles[colorError || color])}>{helperText}</span>
+      <span className={classNames(styles['helper-text'], styles[newColor])}>{helperText}</span>
     </div>
   )
 }

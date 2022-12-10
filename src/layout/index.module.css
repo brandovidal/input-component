@@ -1,6 +1,6 @@
 /* Layout */
 .container {
-    width: fit-content;
+    width: auto;
     max-width: 1000px;
     margin: 0 auto;
     padding: var(--padding-lg);

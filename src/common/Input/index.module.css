@@ -50,3 +50,7 @@
 .with-end-icon {
     padding-right: var(--margin-2xl) !important;
 }
+
+.full-width {
+    width: 100%;
+}

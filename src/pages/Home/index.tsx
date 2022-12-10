@@ -22,6 +22,8 @@ export const Home = (): React.ReactElement => {
           </List>
         ))
       }
+
+      <ControlInput fullWidth />
     </main>
   )
 }

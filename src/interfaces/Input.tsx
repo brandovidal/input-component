@@ -14,6 +14,7 @@ export interface Props {
   isFocus?: boolean
   disabled?: boolean
   error?: boolean
+  fullWidth?: boolean
   withStartIcon?: boolean
   withEndIcon?: boolean
 }

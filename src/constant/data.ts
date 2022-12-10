@@ -97,5 +97,31 @@ export const data: Props[] = [
         }
       }
     ]
+  },
+  {
+    list: [
+      {
+        code: "<Input size='sm' />",
+        input: {
+          size: 'sm'
+        }
+      },
+      {
+        code: "<Input size='md' />",
+        input: {
+          size: 'md'
+        }
+      }
+    ]
+  },
+  {
+    list: [
+      {
+        code: '<Input fullWidth />',
+        input: {
+          fullWidth: true
+        }
+      }
+    ]
   }
 ]
