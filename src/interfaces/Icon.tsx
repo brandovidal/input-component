@@ -1,9 +1,9 @@
-import { Color, Variant } from '../types/Input'
+import { Color } from '../types/Input'
 import { IconName, IconType } from '../types/Icon'
 
 export interface Props {
   name?: IconName
   type?: IconType
-  color?: Color | Variant
+  color?: Color
   className?: string
 }

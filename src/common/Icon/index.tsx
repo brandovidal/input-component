@@ -6,7 +6,7 @@ import { Props } from '../../interfaces/Icon'
 
 import { iconsMap } from '../../helper/Icon'
 
-export const Icon = ({ name = 'phone', type = 'append', color = '', className = '' }: Props): React.ReactElement => {
+export const Icon = ({ name = 'phone', type = 'append', color = 'default', className = '' }: Props): React.ReactElement => {
   const icon = iconsMap[name]
 
   return (
