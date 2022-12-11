@@ -20,6 +20,8 @@ export const ControlInput = ({
   disabled = false,
   error = false,
   fullWidth = false,
+  multine = false,
+  row = 0,
   startIcon = undefined,
   endIcon = undefined
 }: Props): React.ReactElement => {
@@ -41,6 +43,8 @@ export const ControlInput = ({
           disabled={disabled}
           error={error}
           fullWidth={fullWidth}
+          multine={multine}
+          row={row}
           withStartIcon={Boolean(startIcon)}
           withEndIcon={Boolean(endIcon)}
         />

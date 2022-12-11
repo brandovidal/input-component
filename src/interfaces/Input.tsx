@@ -15,6 +15,8 @@ export interface Props {
   disabled?: boolean
   error?: boolean
   fullWidth?: boolean
+  multine?: boolean
+  row?: number
   withStartIcon?: boolean
   withEndIcon?: boolean
 }

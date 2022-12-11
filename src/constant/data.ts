@@ -123,5 +123,16 @@ export const data: Props[] = [
         }
       }
     ]
+  },
+  {
+    list: [
+      {
+        code: "<Input multine row='4' />",
+        input: {
+          multine: true,
+          row: 4
+        }
+      }
+    ]
   }
 ]

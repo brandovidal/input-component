@@ -15,26 +15,41 @@ export const Input = ({
   disabled = false,
   error = false,
   fullWidth = false,
+  multine = false,
+  row = 0,
   withStartIcon = false,
-  withEndIcon = false,
+  withEndIcon = false
 }: Props): React.ReactElement => {
   const newColor = error ? 'danger' : color
 
   return (
-    <input
-      type={type}
-      className={classnames(
+    multine ?
+      (<textarea className={classnames(
         styles.input,
         styles[newColor],
         styles[size],
         isHover && styles.active,
-        isFocus && styles.focus,
-        fullWidth && styles['full-width'],
-        withStartIcon && styles['with-start-icon'],
-        withEndIcon && styles['with-end-icon'])}
-      placeholder={placeholder}
-      disabled={disabled}
-      value={value}
-    />
+        isFocus && styles.focus,)}
+        rows={row}
+        placeholder={placeholder}
+        disabled={disabled}
+        defaultValue={value}
+      />)
+      :
+      (<input
+        type={type}
+        className={classnames(
+          styles.input,
+          styles[newColor],
+          styles[size],
+          isHover && styles.active,
+          isFocus && styles.focus,
+          fullWidth && styles['full-width'],
+          withStartIcon && styles['with-start-icon'],
+          withEndIcon && styles['with-end-icon'])}
+        placeholder={placeholder}
+        disabled={disabled}
+        defaultValue={value}
+      />)
   )
 }
