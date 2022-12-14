@@ -1,6 +1,6 @@
 <!-- Please update value in the {}  -->
 
-<h1 align="center">Button Component</h1>
+<h1 align="center">Input Component</h1>
 
 <div align="center">
    Solution for a challenge from  <a href="http://devchallenges.io" target="_blank">Devchallenges.io</a>.
@@ -8,15 +8,15 @@
 
 <div align="center">
   <h3>
-    <a href="https://button-component.pages.dev/">
+    <a href="https://input-component.pages.dev">
       Demo
     </a>
     <span> | </span>
-    <a href="https://github.com/brandovidal/button-component">
+    <a href="https://github.com/brandovidal/input-component">
       Solution
     </a>
     <span> | </span>
-    <a href="https://devchallenges.io/challenges/ohgVTyJCbm5OZyTB2gNY">
+    <a href="https://devchallenges.io/solutions/uKe6QHEOf7svHqmltwgY">
       Challenge
     </a>
   </h3>
@@ -76,7 +76,7 @@ To clone and run this application, you'll need [Git](https://git-scm.com) and [N
 ### Clone this repository
 
 ```bash
-git clone https://github.com/brandovidal/portfolio-master.git
+git clone https://github.com/brandovidal/input-component.git
 ```
 
 ### Install dependencies
