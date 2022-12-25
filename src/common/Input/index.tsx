@@ -19,7 +19,7 @@ export const Input = ({
   row = 0,
   withStartIcon = false,
   withEndIcon = false
-}: Props): React.ReactElement => {
+}: Props): JSX.Element => {
   const newColor = error ? 'danger' : color
 
   return (

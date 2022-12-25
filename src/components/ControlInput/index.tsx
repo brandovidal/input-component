@@ -1,11 +1,11 @@
 import styles from './index.module.css'
+import classNames from 'classnames'
 
 import { Props } from '../../interfaces/ControlInput'
 
 import { Icon } from '../../common/Icon'
 import { Input } from '../../common/Input'
 import { Label } from '../../common/Label'
-import classNames from 'classnames'
 
 export const ControlInput = ({
   label = 'Label',
@@ -24,14 +24,14 @@ export const ControlInput = ({
   row = 0,
   startIcon = undefined,
   endIcon = undefined
-}: Props): React.ReactElement => {
+}: Props): JSX.Element => {
   const newColor = error ? 'danger' : color
 
   return (
     <div className={classNames(styles.control, fullWidth && styles['full-width'])}>
       <Label text={label} color={newColor} />
       <div className={classNames(styles.input, fullWidth && styles['full-width'])}>
-        {startIcon !== undefined && <Icon name={startIcon} color={color} type='append' className={styles.start} />}
+        {startIcon !== undefined && <Icon name={startIcon} color={color} type="append" className={styles.start} />}
         <Input
           type={type}
           color={newColor}
@@ -48,7 +48,7 @@ export const ControlInput = ({
           withStartIcon={Boolean(startIcon)}
           withEndIcon={Boolean(endIcon)}
         />
-        {endIcon !== undefined && <Icon name={endIcon} color={color} type='prepend' className={styles.end} />}
+        {endIcon !== undefined && <Icon name={endIcon} color={color} type="prepend" className={styles.end} />}
       </div>
       <span className={classNames(styles['helper-text'], styles[newColor])}>{helperText}</span>
     </div>
