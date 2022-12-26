@@ -1,11 +1,11 @@
 import styles from './index.module.css'
+import classNames from 'classnames'
 
 import { Props } from '../../interfaces/ControlInput'
 
 import { Icon } from '../../common/Icon'
 import { Input } from '../../common/Input'
 import { Label } from '../../common/Label'
-import classNames from 'classnames'
 
 export const ControlInput = ({
   label = 'Label',
@@ -24,7 +24,7 @@ export const ControlInput = ({
   row = 0,
   startIcon = undefined,
   endIcon = undefined
-}: Props): React.ReactElement => {
+}: Props): JSX.Element => {
   const newColor = error ? 'danger' : color
 
   return (

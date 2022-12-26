@@ -5,6 +5,7 @@ export interface Props {
   type?: Type
   size?: Size
   color?: Color
+  name?: string
   placeholder?: string
   value?: string
   helperText?: string

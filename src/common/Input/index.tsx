@@ -9,6 +9,7 @@ export const Input = ({
   size = 'md',
   color = 'default',
   placeholder = '',
+  name = 'default',
   value = '',
   isHover = false,
   isFocus = false,
@@ -19,7 +20,7 @@ export const Input = ({
   row = 0,
   withStartIcon = false,
   withEndIcon = false
-}: Props): React.ReactElement => {
+}: Props): JSX.Element => {
   const newColor = error ? 'danger' : color
 
   return (
@@ -34,6 +35,8 @@ export const Input = ({
           rows={row}
           placeholder={placeholder}
           disabled={disabled}
+          data-testid={name}
+          name={name}
           defaultValue={value}
          />)
       : (<input
@@ -49,6 +52,8 @@ export const Input = ({
             withEndIcon && styles['with-end-icon'])}
           placeholder={placeholder}
           disabled={disabled}
+          data-testid={name}
+          name={name}
           defaultValue={value}
          />)
   )
