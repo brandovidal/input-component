@@ -82,31 +82,31 @@ git clone https://github.com/brandovidal/input-component.git
 ### Install dependencies
 
 ```bash
-npm run install
+pnpm install
 ```
 
 ### Run the app
 
 ```bash
-npm run dev
+pnpm run dev
 ```
 
 ### Deploy app
 
 ```bash
-npm run build
+pnpm run build
 ```
 
 ### Preview deploy
 
 ```bash
-npm run preview
+pnpm run preview
 ```
 
 ### Clean repository
 
 ```bash
-npm run clean
+pnpm run clean
 ```
 
 ## Acknowledgements
